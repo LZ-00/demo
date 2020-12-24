@@ -23,7 +23,7 @@ public class MsmServiceImpl implements MsmService {
     @Override
     public boolean send(Map<String, Object> param, String phone) {
 
-        DefaultProfile profile = DefaultProfile.getProfile("default", "LTAI4GHWvCJZDkHGP9vWxMhk", "hcGSKoapsaz6ljbXjOx88g2JYO7I7s");
+        DefaultProfile profile = DefaultProfile.getProfile("default", ALiYunPropertiesUtil.KEY_ID, ALiYunPropertiesUtil.KEY_SECRET);
         IAcsClient client = new DefaultAcsClient(profile);
 
         CommonRequest request = new CommonRequest();
