@@ -11,6 +11,7 @@ import com.lz.entity.User;
  * @author lz
  * @since 2020-12-09
  */
+
 public interface UserMapper extends BaseMapper<User> {
 
 }
